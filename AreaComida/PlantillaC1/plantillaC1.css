@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bitter|Ubuntu+Mono');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+
+
+.tittle-text{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url('../../imgs/fondocomida1.jpg') center/cover no-repeat fixed;
+    margin-top: auto;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .tittle{
+    color: #fff;
+    font-size: 50px;
+    
+}
+
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top: 10px;
+}
+
+.hero-button:hover{
+    background: #fff; 
+    color: orange;
+    border: none;
+}
+
+
+/*animacion, sepuede quitar*/
+.pulsate{
+    animation: pulsate 3s ese-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color: #000;
+}
+
+@-webkit-heyframes pulsate{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .3;
+    }
+}
+
+
+/*--========About u====================*/
+#about{
+    padding: 40px;
+}
+
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+
+.about-icon .fas{
+    font-size: 60px;
+    color: orange;
+    margin-right: 20px;
+}
+
+.about-subtitle{
+    text-transform: capitalize;
+    color:  orange;
+    font-size: 25px;
+}
+
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 2s ease, color 2s ease;
+    transform: translate(-10px);
+    color: #cd6100;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px){
+    .about-center{
+      display: flex;
+      flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 00 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width 972px){
+    .about{
+        flex: 0 0  calc(33.3% - 16px);
+    }
+}
+
+
+/*===============Menu Section================*/
+.menu-image{
+    min-height: 80vh;
+    background: url(../../imgs/fondocomida2.jpg)center/cover fixed no-repeat;
+}
+
+.menu-text{
+    min-height: 80vh;
+    align-items: center;
+    background: orange;
+    columns: #000;
+    padding: 40px 0;
+}
+
+.menu-text-center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: rgb(10,10,10);
+    color: orange;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.menu-text a:hover{
+    color: orange;
+    background: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 776px){
+    .menu{
+        display: flex;
+    }
+    .menu-text{
+        flex: 0 0 30%;
+    }
+    .menu-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    }
+    .menu{
+        background: orange;
+    }
+}
+
+
+/*=======Social Icon=======*/
+#social-icons{
+    height: 150px;
+    background: #fff;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+
+#social-icons a:hover{
+    transform: translate(-20px);
+}
+
+.facebook{
+    color: #3b5998;
+}
+
+.twitter{
+    color: #38a1f3;
+}
+
+.instagram{
+    color: #e1306c;
+}
+
+
+/*=========Numbers=============*/
+.number{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url('../../imgs/fondocomida1.jpg') center/cover no-repeat fixed;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.number p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number:hover{
+    color: orange;
+}
+
+.number .fas{
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.number h3{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px){
+    #numbers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #numbers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+#popUpMain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1001;
+    font-family: 'Slabo 27px', serif;
+}
+
+#popup{
+    width: 500px;
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), orange; 
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 5px 3px white;
+    text-align: center;
+}
+
+#newsHeading{
+    transform: translateY(50px);
+    color: white;
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: 'Baloo Chettan 2', cursive;
+    text-transform: uppercase;
+    
+}
+
+#tips{
+    padding: 5px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: 'Baloo Chettan 2', cursive;
+    color: whitesmoke;
+    margin-right: 1px;
+}
+
+.submitID{
+    /* background-color: #0fc0fa; */
+    background: rgba(10,10,10);
+    /* color: orange; */
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    color: white; 
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 200px;
+}
+
+#iconito{
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 1px;
+}
+
+
+
+
+
+/* BOTON FLOTANTE */
+.btn-flotante a{
+    display: inline-block; 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #000;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100px;
+}
+
+.btn-flotante a:hover{
+    color: orange;
+    background: #fff;
+    border: none;
+}
+
+
+
+.modal-fb{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.7); 
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 0; 
+    /* display: flex;*/
+    /* justify-content: center;*/
+    /* align-items: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -150%);
+     display: none; 
+}
+
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#newsHeading1{
+    transform: translateY(50px);
+    color: black;
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: 'Baloo Chettan 2', cursive;
+    text-transform: uppercase;
+    padding: -20px;
+    
+}
+
+#txt-fb{
+    width: 80%;
+    height: 10%;
+    display: block; 
+    margin: 80px auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 200px;
+}
+
+#btnGuardo{
+   /* text-decoration: none; 
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #000; */
+    /* right: 30px;
+    bottom: 30px; */
+    /* z-index: 100px;  */
+    /* font-family: 'Baloo Chettan 2', cursive;
+    margin-bottom: -40px; */
+    
+    
+     background: orange;
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    color: black; 
+   font-family: 'Baloo Chettan 2', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 200px;
+     
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    /*  right: 14px; */
+    left: 14px;
+    margin-left: 430%;
+    font-size: 40px;
+    transform: rotate(65deg);
+    cursor: pointer;
+}

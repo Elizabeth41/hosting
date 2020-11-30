@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+   
+    background-size: cover;
+    color: #fff;
+    background: url(imgs/fondociudad6.jpg) fixed #dea478 top center no-repeat;
+    background-size: 170%;
+    
+}
+
+
+#Boton1.btn.bg-semi-white{          /*para que se muestre color transparente con esto le doy la transparencia */
+    color: #fff;
+    border: 1px solid #fff;
+    width: 50%;
+    height: 48px;
+    margin: 0;
+    background: rgba(255,255,220,0.1);
+    margin-top: 20%;
+    margin-bottom: 2%;
+    margin-left: 27%;
+    font-size: 20px;
+    
+}
+
+.btn, .dropdown-item, *[data-scrollto], .nav-link {                     /*para que al poner el clic en el boton se ponga como puntero*/
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+button:hover {
+    color: #ff0;
+}
+
+button:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#Boton2.btn.bg-semi-white{          /*para que se muestre color transparente con esto le doy la transparencia */
+    color: #fff;
+    border: 1px solid #fff;
+    width: 50%;    
+    height: 48px;
+    margin: 0;
+    background: rgba(255,255,220,0.1);
+    margin-bottom: 1%;
+    margin-left: 27%;
+    font-size: 20px;
+}
+
+#Boton3.btn.bg-semi-white{          /*para que se muestre color transparente con esto le doy la transparencia */
+    color: #fff;
+    border: 1px solid #fff;
+    width: 50%;    
+    height: 48px;
+    margin: 0;
+    background: rgba(255,255,220,0.1);
+    margin-bottom: 1%;
+    margin-left: 27%;
+    font-size: 20px;
+}

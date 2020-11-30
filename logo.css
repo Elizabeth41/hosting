@@ -1,0 +1,47 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    
+    /*background-color: #ffdd90;
+    background-image: url("imgs/fondociudad3.jpg"); */
+    /* background-repeat: no-repeat;    
+    background-size: 140%; */
+    
+    background-size: cover;
+    color: #fff;
+    background: url(imgs/fondociudad6.jpg) fixed #dea478 top center no-repeat;
+    background-size: 170%;
+    
+}
+
+
+.logoInicio {
+    
+    margin-top: 78px;
+    margin-left: 33%;
+    
+}
+
+
+#logoproyecto {
+    
+    font-family: Roboto,sans-serif,sans-serif;
+    font-weight: 300;
+    
+}
+
+
+#etiquetaIr{
+    
+    color: white;
+    margin-left: -30%;
+    font-size: 20px;
+    
+}
